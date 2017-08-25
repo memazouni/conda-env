@@ -1,7 +1,9 @@
-name: DAND
+name: dand
 channels:
+- conda-forge
 - defaults
 dependencies:
+- cerberus=1.1=py27_0
 - _nb_ext_conf=0.3.0=py27_0
 - anaconda-client=1.6.0=py27_0
 - appnope=0.1.0=py27_0
@@ -98,5 +100,5 @@ dependencies:
   - nb-conda==2.0.0
   - nb-conda-kernels==2.0.0
   - prompt-toolkit==1.0.9
-prefix: /Users/blake/anaconda/envs/DAND
+prefix: /Users/blake/anaconda/envs/dand
 
