@@ -69,3 +69,19 @@ If you forget what your environments are named (happens to me sometimes), use co
 
 ## Removing Environments
 If there are environments you don't use anymore, conda env remove -n env_name will remove the specified environment (here, named env_name).
+
+## Exporting the Environment File
+*NOTE: If you already have an environment.yml file in your current directory, it will be overwritten during this task.*
+
+Activate the environment to export:
+
+Windows: activate myenv
+macOS and Linux: source activate myenv
+NOTE: Replace myenv with the name of the environment.
+Export your active environment to a new file:
+
+conda env export > environment.yml
+*NOTE: This file handles both the environment’s pip packages and conda packages.*
+Email or copy the exported environment.yml file to the other person.
+
+
