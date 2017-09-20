@@ -81,7 +81,9 @@ NOTE: Replace myenv with the name of the environment.
 Export your active environment to a new file:
 
 conda env export > environment.yml
+
 *NOTE: This file handles both the environment’s pip packages and conda packages.*
+
 Email or copy the exported environment.yml file to the other person.
 
 
