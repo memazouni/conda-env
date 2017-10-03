@@ -74,8 +74,8 @@ You can specify the environment to install to in the install command
 
 Or you can activate the environment, then install
 
-```[source] activate env-name
-conda install package-name```
+```[source] activate env-name```
+```conda install package-name```
 
 ## Removing Environments
 If there are environments you don't use anymore, conda env remove -n env_name will remove the specified environment (here, named env_name).
