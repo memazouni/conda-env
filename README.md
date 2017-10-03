@@ -67,6 +67,16 @@ To create an environment from an environment file use conda env create -f enviro
 ## Listing Environments
 If you forget what your environments are named (happens to me sometimes), use conda env list to list out all the environments you've created. You should see a list of environments, there will be an asterisk next to the environment you're currently in. The default environment, the environment used when you aren't in one, is called root.
 
+## Adding Packages into Environment
+You can specify the environment to install to in the install command
+
+conda install -n env-name package-name
+
+or you can activate the environment, then install
+
+[source] activate env-name
+conda install package-name
+
 ## Removing Environments
 If there are environments you don't use anymore, conda env remove -n env_name will remove the specified environment (here, named env_name).
 
