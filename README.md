@@ -70,12 +70,12 @@ If you forget what your environments are named (happens to me sometimes), use co
 ## Adding Packages into Environment
 You can specify the environment to install to in the install command
 
-conda install -n env-name package-name
+```conda install -n env-name package-name```
 
-or you can activate the environment, then install
+Or you can activate the environment, then install
 
-[source] activate env-name
-conda install package-name
+```[source] activate env-name
+conda install package-name```
 
 ## Removing Environments
 If there are environments you don't use anymore, conda env remove -n env_name will remove the specified environment (here, named env_name).
@@ -85,15 +85,17 @@ If there are environments you don't use anymore, conda env remove -n env_name wi
 
 Activate the environment to export:
 
-Windows: activate myenv
-macOS and Linux: source activate myenv
+Windows: 
+```activate myenv```
+
+macOS and Linux:
+```source activate myenv```
+
 NOTE: Replace myenv with the name of the environment.
 Export your active environment to a new file:
 
-conda env export > environment.yml
+```conda env export > environment.yml```
 
 *NOTE: This file handles both the environment’s pip packages and conda packages.*
 
 Email or copy the exported environment.yml file to the other person.
-
-
