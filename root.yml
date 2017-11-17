@@ -5,11 +5,12 @@ channels:
 dependencies:
 - cerberus=1.1=py36_0
 - helper=2.4.1=py36_0
+- wordcloud=1.2.1=py36_0
 - _license=1.1=py36_1
 - alabaster=0.7.10=py36h174008c_0
 - anaconda-client=1.6.5=py36h04cfe59_0
-- anaconda=custom=py36_0
-- anaconda-navigator=1.6.8=py36hee14809_1
+- anaconda=custom=py36ha4fed55_0
+- anaconda-navigator=1.6.9=py36ha31b149_0
 - anaconda-project=0.8.0=py36h99320b2_0
 - appnope=0.1.0=py36hf537a9a_0
 - appscript=1.0.1=py36h9e71e49_1
@@ -21,6 +22,7 @@ dependencies:
 - babel=2.5.0=py36h9f161ff_0
 - backports=1.0=py36ha3c1827_1
 - backports.shutil_get_terminal_size=1.0.0=py36hd7a2ee4_2
+- basemap=1.0.7=np112py36_0
 - beautifulsoup4=4.6.0=py36h72d3c9f_1
 - bitarray=0.8.1=py36h20fa61d_0
 - bkcharts=0.2=py36h073222e_0
@@ -37,7 +39,7 @@ dependencies:
 - cloudpickle=0.4.0=py36h13b7e56_0
 - clyent=1.2.2=py36hae3ad88_0
 - colorama=0.3.9=py36hd29a30c_0
-- conda=4.3.29=py36hbf39572_0
+- conda=4.3.30=py36h173c244_0
 - conda-env=2.6.0=h36134e3_0
 - constantly=15.1.0=py36_0
 - contextlib2=0.5.5=py36hd66e5e7_0
@@ -45,6 +47,7 @@ dependencies:
 - cssselect=1.0.1=py36_0
 - curl=7.55.1=h7601780_3
 - cycler=0.10.0=py36hfc81398_0
+- cymem=1.31.2=py36_0
 - cython=0.26.1=py36hd51f8eb_0
 - cytoolz=0.8.2=py36h290905f_0
 - dask=0.15.2=py36h4a50f7f_0
@@ -52,6 +55,7 @@ dependencies:
 - datashape=0.5.4=py36hfb22df8_0
 - dbus=1.10.22=h50d9ad6_0
 - decorator=4.1.2=py36h69a1b52_0
+- dill=0.2.7.1=py36hdf89ffe_0
 - distributed=1.18.3=py36h46ea802_0
 - docutils=0.14=py36hbfde631_0
 - entrypoints=0.2.3=py36hd81d71f_2
@@ -61,7 +65,9 @@ dependencies:
 - filelock=2.0.12=py36h0d0b4fb_0
 - flask=0.12.2=py36h5658096_0
 - flask-cors=3.0.3=py36h7387b97_0
-- freetype=2.8=h143eb01_0
+- freetype=2.5.5=2
+- ftfy=4.4.3=py36_0
+- geos=3.5.0=0
 - get_terminal_size=1.0.0=h7520d66_0
 - gettext=0.19.8.1=hb0f4f8b_2
 - gevent=1.2.2=py36ha70b9d6_0
@@ -69,6 +75,7 @@ dependencies:
 - glob2=0.5=py36h12393a9_0
 - gmp=6.1.2=h4a9834d_0
 - gmpy2=2.0.8=py36h7ef02cb_1
+- graphviz=2.38.0=4
 - greenlet=0.4.12=py36hf09ba7b_0
 - h5py=2.7.0=py36h6400cee_1
 - hdf5=1.10.1=h6090a45_0
@@ -104,6 +111,7 @@ dependencies:
 - libcxxabi=4.0.1=hebd6815_0
 - libedit=3.1=hb4e282d_0
 - libffi=3.2.1=hd939716_3
+- libgcc=4.8.5=hdbeacc1_10
 - libgfortran=3.0.1=h93005f0_2
 - libiconv=1.15=h99df5da_5
 - libpng=1.6.32=hce72d48_2
@@ -112,13 +120,14 @@ dependencies:
 - libsodium=1.0.13=hba5e272_2
 - libssh2=1.8.0=h1218725_2
 - libtiff=4.0.8=h8cd0352_9
+- libxgboost=0.60=h8fd8b8a_0
 - libxml2=2.9.4=hbd0960b_5
 - libxslt=1.1.29=h95a2935_5
 - llvmlite=0.20.0=py36_0
 - locket=0.2.0=py36hca03003_1
 - lxml=3.8.0=py36h1003d81_0
 - markupsafe=1.0=py36h3a1e703_1
-- matplotlib=2.0.2=py36h507e440_1
+- matplotlib=2.0.2=np112py36_0
 - mccabe=0.6.1=py36hdaeb55d_0
 - mistune=0.7.4=py36hccd6237_0
 - mkl=2017.0.3=0
@@ -128,6 +137,7 @@ dependencies:
 - mpmath=0.19=py36h9185fea_2
 - msgpack-python=0.4.8=py36h46767b2_0
 - multipledispatch=0.4.9=py36hc5f92b5_0
+- murmurhash=0.26.4=py36_0
 - navigator-updater=0.1.0=py36h7aee5fb_0
 - nbconvert=5.3.1=py36h810822e_0
 - nbformat=4.4.0=py36h827af21_0
@@ -146,27 +156,33 @@ dependencies:
 - openssl=1.0.2l=h57f3a61_2
 - packaging=16.8=py36he5e8135_0
 - pandas=0.20.3=py36hd6655d8_2
+- pandas-datareader=0.5.0=py36_0
 - pandoc=1.19.2.1=ha5e8f32_1
 - pandocfilters=1.4.2=py36h3b0b094_1
 - parsel=1.2.0=py36_0
 - partd=0.3.8=py36hf5c4cb8_0
 - path.py=10.3.1=py36hd33c240_0
+- pathlib=1.0.1=py36_0
 - pathlib2=2.3.0=py36h877a6d8_0
 - patsy=0.4.1=py36ha1b3fa5_0
 - pcre=8.41=h29eefc5_0
 - pep8=1.7.0=py36hc268eb1_0
 - pexpect=4.2.1=py36h3eac828_0
 - pickleshare=0.7.4=py36hf512f8e_0
-- pillow=4.2.1=py36h0263179_0
+- pillow=4.2.1=py36_0
 - pip=9.0.1=py36hbbb9e21_2
 - pkginfo=1.4.1=py36h25bf955_0
+- plac=0.9.6=py36_0
+- plotly=2.1.0=py36h9570409_0
 - ply=3.10=py36h10e714e_0
+- preshed=1.0.0=py36_0
 - prompt_toolkit=1.0.15=py36haeda067_0
 - protobuf=3.2.0=py36_0
 - psutil=5.2.2=py36hce78e15_0
 - psycopg2=2.7.1=py36_0
 - ptyprocess=0.5.2=py36he6521c3_0
 - py=1.4.34=py36hecf431b_1
+- py-xgboost=0.60=py36np112hcfb0327_0
 - pyasn1=0.2.3=py36_0
 - pyasn1-modules=0.0.8=py36_0
 - pycodestyle=2.3.1=py36h83e8646_0
@@ -175,9 +191,11 @@ dependencies:
 - pycrypto=2.6.1=py36h72f2894_1
 - pycurl=7.43.0=py36hdb90038_3
 - pydispatcher=2.0.5=py36_0
+- pydotplus=2.0.2=py36_0
 - pyflakes=1.5.0=py36h7fdd505_1
 - pygments=2.2.0=py36h240cd3f_0
 - pylint=1.7.2=py36h2492be7_0
+- pymongo=3.4.0=py36_0
 - pyodbc=4.0.17=py36h5478161_0
 - pyopenssl=17.2.0=py36h5d7bf08_0
 - pyparsing=2.2.0=py36hb281f35_0
@@ -187,6 +205,7 @@ dependencies:
 - pytest=3.2.1=py36h9963153_1
 - python=3.6.2=h26d10c0_12
 - python-dateutil=2.6.1=py36h86d2abb_1
+- python-graphviz=0.5.2=py36_0
 - python.app=2=py36h02ac5de_5
 - pytz=2017.2=py36h2e7dfbc_1
 - pywavelets=0.5.2=py36h2710a04_0
@@ -198,7 +217,10 @@ dependencies:
 - qtpy=1.3.1=py36h16bb863_0
 - queuelib=1.4.2=py36_0
 - readline=7.0=h81b24a6_3
+- regex=2017.09.23=py36h7f96c55_0
 - requests=2.18.4=py36h4516966_1
+- requests-file=1.4.1=py36_0
+- requests-ftp=0.3.1=py36_0
 - rope=0.10.5=py36h5764ad1_0
 - ruamel_yaml=0.11.14=py36h9d7ade0_2
 - sas7bdat=2.0.7=py36_0
@@ -216,6 +238,7 @@ dependencies:
 - snowballstemmer=1.2.1=py36h6c7b616_0
 - sortedcollections=0.5.3=py36he9c3ed6_0
 - sortedcontainers=1.5.7=py36ha982688_0
+- spacy=1.9.0=py36h4e87756_1
 - sphinx=1.6.3=py36hcd1b3e7_0
 - sphinxcontrib=1.0=py36h9364dc8_1
 - sphinxcontrib-websupport=1.0.1=py36h92f4a7a_1
@@ -226,14 +249,18 @@ dependencies:
 - sympy=1.1.1=py36h7f3cf04_0
 - tblib=1.3.2=py36hda67792_0
 - tensorflow=1.1.0=np112py36_0
+- termcolor=1.1.0=py36_0
 - terminado=0.6=py36h656782e_0
 - testpath=0.3.1=py36h625a49b_0
+- thinc=6.5.2=py36_0
 - tk=8.6.7=hcdce994_1
 - toolz=0.8.2=py36h7b95164_0
 - tornado=4.5.2=py36h468dda9_0
+- tqdm=4.19.2=py36h2e8aa56_0
 - traitlets=4.3.2=py36h65bd3ce_0
 - twisted=17.5.0=py36_0
 - typing=3.6.2=py36haa2d9ef_0
+- ujson=1.35=py36_0
 - unicodecsv=0.14.1=py36he531d66_0
 - unixodbc=2.3.4=h4cb4dde_1
 - urllib3=1.22=py36h68b9469_0
@@ -256,6 +283,7 @@ dependencies:
 - zope=1.0=py36_0
 - zope.interface=4.4.2=py36_0
 - pip:
+  - altair==1.2.1
   - autopep8==1.3.2
   - awscli==1.11.161
   - backports.shutil-get-terminal-size==1.0.0
@@ -277,9 +305,13 @@ dependencies:
   - jupyter-core==4.3.0
   - jupyterlab-launcher==0.4.0
   - linear-tsv==1.0.0
+  - mglearn==0.1.6
+  - oauthlib==2.0.6
   - prompt-toolkit==1.0.15
   - pycountry==17.5.14
+  - pytesseract==0.1.7
   - quantecon==0.3.5.1
+  - requests-oauthlib==0.8.0
   - rfc3986==0.4.1
   - rsa==3.4.2
   - ruamel-yaml==0.11.14
@@ -287,6 +319,9 @@ dependencies:
   - service-identity==17.0.0
   - tables==3.4.2
   - tabulator==1.3.0
+  - tweepy==3.5.0
+  - twitter==1.18.0
+  - vega==0.4.4
   - wbdata==0.2.7
   - xlsx2csv==0.7.3
 prefix: /Users/blake/anaconda
